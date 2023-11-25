@@ -17,12 +17,15 @@ def my_fun():
 @app.route("/predict_charges")
 
 def get_insurance_charges():
-    age = 50  
-    sex = 'male'
-    bmi = 28.3
-    children = 1
-    smoker = 'yes'
-    region = 'southeast'
+    data = request.form
+    print("Data Is :",data)
+
+    age = eval(data['age'])  
+    sex = data['sex']
+    bmi = eval(data['bmi'])
+    children = eval(data['children'])
+    smoker = data['smoker']
+    region = data['region']
 
     print("age,sex,bmi,children,smoker,region >>",age,sex,bmi,children,smoker,region)
 
