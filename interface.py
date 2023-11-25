@@ -35,4 +35,4 @@ def get_insurance_charges():
 
 
 
-app.run(port = config.PORT_NUMBER,debug = True ) # Server Start
+app.run(port = "0.0.0.0",debug = False ) # Server Start
