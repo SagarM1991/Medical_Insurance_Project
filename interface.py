@@ -33,6 +33,5 @@ def get_insurance_charges():
     return jsonify({"Result" : f"Predicted Medical insurance Charges are {charges}"})
     # return render_template("view_result.html", charges=charges)
 
-
-
-app.run(debug=False, host='0.0.0.0') # Server Start
+if __name__ == '__main__':
+    app.run(debug=False, host='0.0.0.0') # Server Start
