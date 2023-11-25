@@ -10,11 +10,10 @@ app = Flask(__name__)
 ##########################################################################################
 @app.route('/') # HOme API
 def my_fun():
-    print("Hello Flask")
-    return render_template('home.html')
+    return render_template("home.html")
 
 
-@app.route("/predict_charges")
+@app.route("/predict_charges", methods= ["post"])
 
 def get_insurance_charges():
     data = request.form
