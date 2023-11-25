@@ -33,7 +33,7 @@ class MedicalInsurance():
         test_array[4] = self.json_data["smoker"][self.smoker]
         test_array[region_index] = 1
 
-        print("TEST ARRAY :",test_array)  # 9 values
+        # print("TEST ARRAY :",test_array)  # 9 values
 
         predict_charges = self.model.predict([test_array])
 

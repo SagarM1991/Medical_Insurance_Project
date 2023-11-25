@@ -17,7 +17,7 @@ def my_fun():
 
 def get_insurance_charges():
     data = request.form
-    print("Data Is :",data)
+    # print("Data Is :",data)
 
     age = eval(data['age'])  
     sex = data['gender']
@@ -26,7 +26,7 @@ def get_insurance_charges():
     smoker = data['smoker']
     region = data['region']
 
-    print("age,sex,bmi,children,smoker,region >>",age,sex,bmi,children,smoker,region)
+    # print("age,sex,bmi,children,smoker,region >>",age,sex,bmi,children,smoker,region)
 
     med_ins = MedicalInsurance(age,sex,bmi,children,smoker,region)
     charges  = med_ins.get_predict_chagres()
