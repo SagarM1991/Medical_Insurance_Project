@@ -34,4 +34,4 @@ def get_insurance_charges():
     return render_template("view_result.html", charges=charges)
 
 if __name__ == '__main__':
-    app.run(debug=False, host='0.0.0.0') # Server Start
+    app.run(debug=False, host='0.0.0.0',port=config.PORT_NUMBER) # Server Start
